@@ -14,4 +14,7 @@ app.get('/', (req, res) => {
 })
 app.use('/users', userRoutes);
 
+const captainRoutes = require("./routes/captain.routes");
+app.use('/captain', captainRoutes);
+
 module.exports = app;   
